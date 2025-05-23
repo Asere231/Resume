@@ -23,6 +23,7 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
+
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -61,8 +62,6 @@
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-
-%-------------------------
 
 %-------------------------
 % Custom commands
@@ -111,47 +110,61 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
-\scriptsize
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
 \begin{center}
     {\Huge \scshape Bryan Aneyro Hernandez} \\ \vspace{1pt}
     Houston, Texas, 77038 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 954-297-1787 ~ 
-    \small \raisebox{-0.2\height}\faEnvelope\ brah0211@outlook.com ~ 
-     \small \raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/bryananeyro ~
-    \small \raisebox{-0.2\height}\faGithub\ github.com/Asere231 ~
-    \small \raisebox{-0.2\height}\faGlobe\ bitbybryan.com
+    \small \raisebox{-0.1\height}\faPhone\ 954-297-1787 ~ \href{mailto:brah0211@outlook.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{Email}} ~ 
+    \href{https://linkedin.com/in/bryananeyro}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
+    \href{https://github.com/Asere231}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://www.bitbybryan.com}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
     \vspace{-8pt}
 \end{center}
 
+%-----------Summary-----------
 \section{Summary}
 \small{
 Recent Computer Science graduate with a strong foundation in algorithms, data structures, and backend development. Skilled in building scalable web services, REST APIs, and full-stack applications using Java, Python, Node.js, and MongoDB. Proven ability to work in Agile teams, solve complex problems, and deliver production-grade software.\\
 \textbf{Actively seeking Software Engineer or Backend Developer roles to contribute to innovative, mission-driven teams.}
 }
 
-\section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {University of Central Florida}{Aug. 2021 -- May 2025}
-    {Bachelor of Science in Computer Science}{GPA: 3.476}
-\resumeSubHeadingListEnd
+    
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida}{Aug. 2021 -- May 2025}
+      {Bachelor of Science in Computer Science}{Overall Cumulative GPA, 3.476}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
-\begin{multicols}{2}
-    \begin{itemize}[itemsep=-5pt, parsep=3pt]
-        \item Data Structures
-        \item Algorithms Analysis
-        \item Senior Design I and II
-        \item OOP Java (\emph{Repository: Java\_OOP})
-        \item Robot Vision (\emph{Repository: Robot-Vision})
-        \item Enterprise Computing (\emph{Repository: Enterprise-Computing})
-        \item System Software (\emph{Repository: PL-0-Compiler})
-    \end{itemize}
-\end{multicols}
-\vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item Data Structures
+                \item Algorithms Analysis
+                \item Senior Design I and II
+                \item Processes for Object-Oriented Software Development
+                \item OOP Java (\underline{\href{https://github.com/Asere231/Java_OOP}{here}})
+                \item Robot Vision (\underline{\href{https://github.com/Asere231/Robot-Vision}{here}})
+                \item Enterprise Computing (\underline{\href{https://github.com/Asere231/Enterprise-Computing}{here}})
+                \item System Software (\underline{\href{https://github.com/Asere231/PL-0-Compiler}{here}})
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -202,21 +215,32 @@ Recent Computer Science graduate with a strong foundation in algorithms, data st
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
+
+%
+%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
     \textbf{Languages}{: Java, Python, C, JavaScript, HTML, CSS} \\
-    \textbf{Frameworks / Libraries}{: Node.js, Express.js, React.js, Next.js, JavaFX, Tailwind CSS, Bootstrap, PyTorch} \\
+    \textbf{Frameworks / Libraries}{: Node.js, Express.js, React.js, Next.js, JavaFX, Bootstrap, Tailwind CSS, PyTorch} \\
     \textbf{Developer Tools}{: GitHub, VS Code, Postman, Ubuntu, Jupyter Notebook} \\
-    \textbf{Backend / DevOps}{: REST APIs, MongoDB, MySQL, JWT Auth, Vercel} \\
-    \textbf{Other}{: Agile, Scrum, Unit Testing}
+    \textbf{Backend / DevOps}{: REST APIs, MongoDB, MySQL, JWT Auth, Vercel } \\
+    \textbf{Other}{: Agile, Scrum, Unit Testing }
   }}
 \end{itemize}
 
+
+
+%----------------
+
+%-----------Certificates-----------
 \section{Certificates}
 \resumeItemListStart
-  \resumeItem
-  {\textbf{ROS2 For Beginners (Level 1, 2, 3) } $|$ \emph{ https://www.linkedin.com/in/bryananeyro/details/certifications/}}
+    \resumeItem
+    {\textbf{ROS2 For Beginners (Level 1, 2, 3) } $|$ \emph{ https://www.linkedin.com/in/bryananeyro/details/certifications/}}
+    
 \resumeItemListEnd
+
+ %---------
 
 \end{document}

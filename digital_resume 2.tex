@@ -23,6 +23,7 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
+
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -61,8 +62,6 @@
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-
-%-------------------------
 
 %-------------------------
 % Custom commands
@@ -111,70 +110,85 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
-\scriptsize
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
 \begin{center}
     {\Huge \scshape Bryan Aneyro Hernandez} \\ \vspace{1pt}
     Houston, Texas, 77038 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 954-297-1787 ~ 
-    \small \raisebox{-0.2\height}\faEnvelope\ brah0211@outlook.com ~ 
-     \small \raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/bryananeyro ~
-    \small \raisebox{-0.2\height}\faGithub\ github.com/Asere231 ~
-    \small \raisebox{-0.2\height}\faGlobe\ bitbybryan.com
+    \small \raisebox{-0.1\height}\faPhone\ 954-297-1787 ~ \href{mailto:brah0211@outlook.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{Email}} ~ 
+    \href{https://linkedin.com/in/bryananeyro}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
+    \href{https://github.com/Asere231}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} ~
+    \href{https://www.bitbybryan.com}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}
     \vspace{-8pt}
 \end{center}
 
+%-----------Summary-----------
 \section{Summary}
 \small{
 Recent Computer Science graduate with a strong foundation in algorithms, data structures, and backend development. Skilled in building scalable web services, REST APIs, and full-stack applications using Java, Python, Node.js, and MongoDB. Proven ability to work in Agile teams, solve complex problems, and deliver production-grade software.\\
 \textbf{Actively seeking Software Engineer or Backend Developer roles to contribute to innovative, mission-driven teams.}
 }
 
-\section{Education}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {University of Central Florida}{Aug. 2021 -- May 2025}
-    {Bachelor of Science in Computer Science}{GPA: 3.476}
-\resumeSubHeadingListEnd
+    
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida}{Aug. 2021 -- May 2025}
+      {Bachelor of Science in Computer Science}{Overall Cumulative GPA, 3.476}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
-\begin{multicols}{2}
-    \begin{itemize}[itemsep=-5pt, parsep=3pt]
-        \item Data Structures
-        \item Algorithms Analysis
-        \item Senior Design I and II
-        \item OOP Java (\emph{Repository: Java\_OOP})
-        \item Robot Vision (\emph{Repository: Robot-Vision})
-        \item Enterprise Computing (\emph{Repository: Enterprise-Computing})
-        \item System Software (\emph{Repository: PL-0-Compiler})
-    \end{itemize}
-\end{multicols}
-\vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item Data Structures
+                \item Algorithms Analysis
+                \item Senior Design I and II
+                \item Processes for Object-Oriented Software Development
+                \item OOP Java (\underline{\href{https://github.com/Asere231/Java_OOP}{here}})
+                \item Robot Vision (\underline{\href{https://github.com/Asere231/Robot-Vision}{here}})
+                \item Enterprise Computing (\underline{\href{https://github.com/Asere231/Enterprise-Computing}{here}})
+                \item System Software (\underline{\href{https://github.com/Asere231/PL-0-Compiler}{here}})
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-        {\textbf{FinanceFlow } $|$ \emph{ Java, Spring Boot, Microservices } $|$ \emph{ Repository: FinanceFlow}}{}
-            \resumeItemListStart
-              \resumeItem{Architected and implemented an seven‑service microservices suite (Auth, Account, Transaction, Categories, Budgets, Goals, API Gateway) using Java 21 and Spring Boot for bank simulation.}
-              \resumeItem{Secured all endpoints with JWT/OAuth2 (Spring Security), exposed REST APIs via Spring Cloud Gateway (WebFlux) with service discovery (Eureka) and inter‑service calls (OpenFeign).}
-              \resumeItem{Designed and implemented a scalable persistence layer using Spring Data JPA with PostgreSQL.}
-            \resumeItemListEnd
+          {\textbf{PL/0 Compiler } $|$ \emph{ C, Compiler Design } $|$ \underline{\href{https://github.com/Asere231/PL-0-Compiler}{repository}}}{}
+              \resumeItemListStart
+                \resumeItem{Collaborated on building a four-module compiler for the PL/0 language targeting a virtual machine.}
+                \resumeItem{Designed and implemented lexical analysis, parsing, and code generation from scratch using C.}
+                \resumeItem{Gained deep understanding of symbol tables, grammar parsing, and runtime environments.}
+              \resumeItemListEnd  
           \vspace{-13pt}
       \resumeProjectHeading
-          {\textbf{Unearthed Truths } $|$ \emph{ Java Spring Boot, PostgreSQL, Docker } $|$ \emph{ Repository: UnearthedTruths and unearthed-truths-frontend}}{}
+          {\textbf{GroupFinder } $|$ \emph{ MERN Stack, Flutter } $|$ \underline{\href{https://github.com/Asere231/GroupFinder}{repository}}}{}
           \resumeItemListStart
-            \resumeItem{Created a RESTful API to map archaeological discoveries linked to Biblical history, using Spring Boot and PostgreSQL.}
-            \resumeItem{Implemented role-based authentication with Spring Security and JWT for secure admin access.}
-            \resumeItem{Deployed backend using Docker on Render to demonstrate real-world containerized deployment.}
+            \resumeItem{Contributed to the development of a web and mobile app to help students find and join real-time study groups in the university library.}
+            \resumeItem{Developed full-stack study group platform for students to coordinate in real-time using Flutter and MERN stack.}
+            \resumeItem{Designed RESTful backend in Node.js/Express, integrated MongoDB with Mongoose, and implemented JWT-based auth.}
+            \resumeItem{Enabled interactive map-based UI to join/create study groups with socket updates; deployed on Android and Web.}
           \resumeItemListEnd
           \vspace{-13pt}
             \resumeProjectHeading
-        {\textbf{Bit by Bryan (Personal Portfolio Website) } $|$ \emph{ Next.js, Tailwind CSS, React, GSAP } $|$ \emph{ Repository: my-portfolio}}{}
+        {\textbf{Bit by Bryan (Personal Portfolio Website) } $|$ \emph{ Next.js, Tailwind CSS, React, GSAP } $|$ \underline{\href{https://github.com/Asere231/my-portfolio}{repository}}}{}
           \resumeItemListStart
             \resumeItem{Created a personal portfolio with Next.js and Tailwind CSS to highlight projects and resume; deployed via Vercel.}
             \resumeItem{Enhanced UX with GSAP and Framer Motion animations and mobile responsiveness.}
@@ -182,7 +196,7 @@ Recent Computer Science graduate with a strong foundation in algorithms, data st
           \resumeItemListEnd
           \vspace{-13pt}
           \resumeProjectHeading
-              {\textbf{Neural Networks and CNN Training } $|$ \emph{ Python, PyTorch, Jupyter Notebook } $|$ \emph{ Repository: Robot-Vision(project2)}}{}
+              {\textbf{Neural Networks and CNN Training } $|$ \emph{ Python, PyTorch, Jupyter Notebook } $|$ \underline{\href{https://github.com/Asere231/Robot-Vision/blob/main/project2.ipynb}{repository}}}{}
               \resumeItemListStart
                 \resumeItem{Built and trained deep learning models using PyTorch for image classification tasks on MNIST and CIFAR-10 datasets.}
                 \resumeItem{Built and tested shallow and deep neural nets with various architectures and activations.}
@@ -191,7 +205,7 @@ Recent Computer Science graduate with a strong foundation in algorithms, data st
               \resumeItemListEnd
           \vspace{-13pt}
           \resumeProjectHeading
-          {\textbf{RE-RASSOR: New Arm (Senior Design) } $|$ \emph{ ROS2, Gazebo, MoveIt2, Python, Ubuntu } $|$ \emph{ Repository: FSI-CS-Arm}}{}
+          {\textbf{RE-RASSOR: New Arm (Senior Design) } $|$ \emph{ ROS2, Gazebo, MoveIt2, Python, Ubuntu } $|$ \underline{\href{https://github.com/Asere231/FSI-CS-Arm}{repository}}}{}
           \resumeItemListStart
             \resumeItem{Contributed to the development of a robotic arm with 4 joints for a lunar rover in a year-long senior design project.}
             \resumeItem{Helped simulate and control robotic motion using Gazebo and MoveIt2, integrating URDF/Xacro robot descriptions.}
@@ -201,23 +215,36 @@ Recent Computer Science graduate with a strong foundation in algorithms, data st
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
+
+%
+%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
     \textbf{Languages}{: Java, Python, C, JavaScript, HTML, CSS} \\
-    \textbf{Frameworks / Libraries}{: Node.js, Express.js, React.js, Next.js, JavaFX, Java Spring, Spring Boot,  Tailwind CSS, Bootstrap, PyTorch} \\
+    \textbf{Frameworks / Libraries}{: Node.js, Express.js, React.js, Next.js, JavaFX, Java Spring, Spring Boot, Bootstrap, Tailwind CSS, PyTorch} \\
     \textbf{Developer Tools}{: GitHub, VS Code, Postman, Ubuntu, Jupyter Notebook} \\
-    \textbf{Backend / DevOps}{: REST APIs, MongoDB, MySQL, JWT Auth, Vercel} \\
-    \textbf{Other}{: Agile, Scrum, Unit Testing}
+    \textbf{Backend / DevOps}{: REST APIs, MongoDB, MySQL, JWT Auth, Vercel } \\
+    \textbf{Other}{: Agile, Scrum, Unit Testing }
   }}
 \end{itemize}
 
+
+
+%----------------
+
+%-----------Certificates-----------
 \section{Certificates}
 \resumeItemListStart
-  \resumeItem
-  {\textbf{ROS2 For Beginners (Level 1, 2, 3) } $|$ \emph{ https://www.linkedin.com/in/bryananeyro/details/certifications/}}
-  \resumeItem
-  {\textbf{Java Spring Framework 6, Spring Boot 3, Spring Al } $|$ \emph{ https://www.linkedin.com/in/bryananeyro/details/certifications/}}
+    \resumeItem
+    {\textbf{\underline{\href{https://www.linkedin.com/in/bryananeyro/details/certifications/}{ROS2 For Beginners (Level 1, 2, 3)}}}}
+\resumeItem
+{\textbf{\underline{\href{https://www.linkedin.com/in/bryananeyro/details/certifications/}{Java Spring Framework 6, Spring Boot 3, Spring AI}}}}
+
+
+    
 \resumeItemListEnd
+
+ %---------
 
 \end{document}
